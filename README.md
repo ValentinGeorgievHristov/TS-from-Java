@@ -52,3 +52,4 @@ CLUBS	Card name: TWO of CLUBS; Card power: 2
 ACE
 SPADES	Card name: ACE of SPADES; Card power: 53
 -------------------------------------------------------------------------------------------------
+3.Cards with Power - Solution with class.
