@@ -1,3 +1,5 @@
+// НЯКОИ ПРИМЕРИ РАБОТЯТ САМО С TS CONFIG ФАЙЛ
+
 // function identity<Type>(arg: Type): Type {
 //     return arg;
 // }
@@ -72,7 +74,7 @@
 // let myIdentityStr: GenericIdentityFn<string>=identity;
 // console.log(`My identity ${myIdentityStr('string')}  typeof ${typeof myIdentityStr('string')}`)
 // -------------------------------------------------------
-
+//
 // class GenericNumber<NumType> {
 //
 //     zeroValue: NumType;
@@ -96,8 +98,8 @@
 // };
 //
 // console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
-//
-//
+
+
 
 // -------------------------------------------------------
 

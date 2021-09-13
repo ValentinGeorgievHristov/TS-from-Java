@@ -9,6 +9,4 @@ export class Card {
         return this.suits + this.rank;
     }
 
-
-
 }
