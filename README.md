@@ -71,3 +71,5 @@ YELLOW GREEN RED
 Exercises: Working with Abstraction
  
 In this section your job is to download source code for every problem and refactor it
+
+6.Greedy Times - Class solved problem.
