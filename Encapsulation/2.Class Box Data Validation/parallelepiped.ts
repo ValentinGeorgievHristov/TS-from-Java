@@ -12,6 +12,9 @@ export class Parallelepiped {
     }
 
     set length(value: number) {
+        if (this._length <= 0) {
+            throw new Error('The length is invalid');
+        }
         this._length = value;
     }
 
@@ -21,9 +24,9 @@ export class Parallelepiped {
         return this._width;
     }
 
-    set width(value: number) {
-            this._width = value;
-    }
+    // set width(value: number) {
+    //         this._width = value;
+    // }
 
     private _height: number;
 
@@ -31,30 +34,45 @@ export class Parallelepiped {
         return this._height;
     }
 
-    set height(value: number) {
-        this._height = value;
-    }
+    // set height(value: number) {
+    //     this._height = value;
+    // }
 
     surfaceArea() {
-        if(this._width>=0){
-       let result =  (this.length * this._height * 2) + (this._width * this._height * 2) + (this._width * this._length*2)
+        if(this.validate(this._length, this._width, this._height)){
+           return this.validate(this._length, this._width, this._height)
+        }
+
+        let result = (this.length * this._height * 2) + (this._width * this._height * 2) + (this._width * this._length * 2)
         return result;
-        }else {
-            console.log('Width cannot be zero or negative.')
-        }
-
-        if (this._length>=0){
-
-        }
     }
 
     lateralSurfaceArea() {
+        if(this.validate(this._length, this._width, this._height)){
+            return this.validate(this._length, this._width, this._height)
+        }
+
         let result = (this.length * this._height * 2) + (this._width * this._height * 2)
         return result;
     }
 
     volume() {
-      let result = this._length * this._height * this._width;
-      return result;
+        if(this.validate(this._length, this._width, this._height)){
+            return this.validate(this._length, this._width, this._height)
+        }
+
+        let result = this._length * this._height * this._width;
+        return result;
+    }
+
+    validate(length: number, width: number, height: number) {
+        if (length <= 0) {
+            return 'Length cannot be zero or negative.'
+        } else if (width <= 0) {
+            return 'Width cannot be zero or negative.'
+        } else if (height <= 0) {
+            return 'Height cannot be zero or negative.'
+        }
+
     }
 }
