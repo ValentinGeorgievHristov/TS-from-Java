@@ -13,17 +13,11 @@ export class Figure {
         this._length = value;
     }
 
-    // constructor() {
-    //     this.length = this.length
-    //         this.width = this.width,
-    //         this.height = this.height
-    // }
-
-
-    // constructor(private makeService: MakeService) {
-    //     // Initialization inside the constructor
-    //     this.makes = [];
-    // }
+    constructor() {
+        this.length = this.length
+            this.width = this.width,
+            this.height = this.height
+    }
 
     private _width: number
 
