@@ -1,16 +1,13 @@
-import {Parallelepiped} from './parallelepiped';
+import { Figure } from './figure';
 
-let a = new Parallelepiped(2, -3, 4);
+let figure = new Figure();
 
-typeof a.surfaceArea() === "number" ?
-    console.log(`Surface Area - ${a.surfaceArea()}`) :
-    console.log(a.surfaceArea());
+figure.length = 1.3;
+figure.width = 1;
+figure.height = 6;
 
-typeof a.lateralSurfaceArea() === "number" ?
-    console.log(`Surface Area - ${a.lateralSurfaceArea()}`) :
-    console.log('');
+console.log(figure.surfaceArea());
+console.log(figure.lateralSurfaceArea());
+console.log(figure.volume());
 
-typeof a.volume() === "number" ?
-    console.log(`Surface Area - ${a.volume()}`) :
-    console.log('');
 
