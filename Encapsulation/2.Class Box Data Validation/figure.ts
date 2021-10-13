@@ -47,19 +47,19 @@ export class Figure {
         this._height = value;
     }
 
-    surfaceArea = () => {
+    surfaceArea = ():number => {
         let result = (this.width * this.length * 2 + this.width * this.height * 2 +
-            this.length * this.height * 2).toFixed(2);
-        return `Surface Area - ${result}`;
+            this.length * this.height * 2);
+        return result;
     }
 
-    lateralSurfaceArea = () => {
-        let result = (this.width * this.height * 2 + this.length * this.height * 2).toFixed(2);
-        return `Lateral Surface Area - ${result}`;
+    lateralSurfaceArea = ():number => {
+        let result = (this.width * this.height * 2 + this.length * this.height * 2);
+        return result;
     }
 
-    volume = () => {
-        let result = (this.width * this.length * this.height).toFixed(2);
-        return `Volume - ${result}`;
+    volume = ():number => {
+        let result = (this.width * this.length * this.height);
+        return result;
     }
 }
