@@ -1,10 +1,10 @@
 import { Figure } from './figure';
 
-let figure = new Figure();
+let figure = new Figure(2,4,-3);
 
-figure.length = 1.3;
-figure.width = 1;
-figure.height = 6;
+// figure.length = 1.3;
+// figure.width = -1;
+// figure.height = 6;
 
 
 console.log(figure.surfaceArea());

@@ -1,6 +1,6 @@
 export class Figure {
 
-    private _length: number
+    // private _length: number
 
     get length(): number {
         return this._length;
@@ -13,13 +13,15 @@ export class Figure {
         this._length = value;
     }
 
-    constructor() {
-        this.length = this.length
-            this.width = this.width,
-            this.height = this.height
+    constructor(l, w, h) {
+        this.length = l;
+        this.width = w;
+        this.height = h;
     }
 
+    private _length:number
     private _width: number
+    private _height: number
 
     get width(): number {
         return this._width;
@@ -32,7 +34,7 @@ export class Figure {
         this._width = value;
     }
 
-    private _height: number
+    // private _height: number
 
     get height(): number {
         return this._height;
